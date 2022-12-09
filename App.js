@@ -5,13 +5,13 @@ import register from "./Screens/register";
 import home from "./Screens/home";
 
 export default App = () => {
-  const Stack = createNativeStackNavigator();
+  const S = createNativeStackNavigator();
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen component={login} name="Login" />
-        <Stack.Screen component={register} name="Register" />
-        <Stack.Screen component={home} name="Home" />
+      <S.Navigator>
+        <S.Screen component={login} name="Login" />
+        <S.Screen component={register} name="Register" />
+        <S.Screen component={home} name="Home" />
       </Stack.Navigator>
     </NavigationContainer>
   );
